@@ -165,7 +165,6 @@ ConnectedComponents::relabel_image(Tlabel *labelimg, int width, int height)
 
     for(int i = 0; i<width*height; ++i) {
         labelimg[i] = labels[root_of(labelimg[i])].tag;
-        std::cout << labelimg[i] << std::endl;
     }
     
     return newtag;
